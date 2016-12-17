@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- AngularJS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+		<!-- Firebase -->	
+		<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+
+		<!-- AngularFire -->
+		<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+
+		<!-- CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+    	<title>Sign In</title>
+
+  </head>
+
+  <body>
+    <div class="container">
+      
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="../index.html">Back</a></li>
+            <!-- <li role="presentation"><a href="#">About</a></li> -->
+            <!-- <li role="presentation"><a href="#">Contact</a></li> -->
+          </ul>
+        </nav>
+        <h3 class="text-muted">Sign In</h3>
+      </div>
+
+      <div class="jumbotron">
+        <!-- <h1></h1> -->
+         <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email"  required="true" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Enter email">
+        </div>
+        <div class="form-group">
+          <label for="exampleInputPassword1">Password</label>
+          <input type="password" class="form-control" id="password-input" placeholder="Password">
+        </div>
+      </form>
+
+        <div class="alert alert-danger" id="invalid-credentials" style="display: none">
+         <strong>Incorrect Email or Password</strong> 
+          <br>
+        </div>
+
+        <a  id="signin-button" class="btn btn-success">Sign in</a>
+
+        <!-- <p><a class="btn btn-sm btn-default" href="#" role="button">Sign in</a></p> -->
+      </div>
+
+
+    </div> 
+
+      <!-- Load js after page is done -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/signIn.js"></script>
+  </body>
+
+</html>

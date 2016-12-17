@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- AngularJS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+		<!-- Firebase -->	
+		<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+
+		<!-- AngularFire -->
+		<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+
+		<!-- CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+
+    	<title>Admin Home</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <!-- <li role="presentation" class="active"><a href="../index.html">Back</a></li> -->
+          </ul>
+        </nav>
+        <h3 class="text-muted">Admin Home</h3>
+      </div>
+     <div class="container">
+      <form>
+        <div class="form-group">
+         <label for="serviceName">Service Name</label>
+         <input class="form-control" id="serviceName-input" placeholder="Enter Service Name">
+       </div>
+        <div class="form-group">
+         <label for="serviceType">Service Type</label>
+         <input class="form-control" id="serviceType-input" placeholder="Enter Service Type">
+       </div>
+        <div class="form-group">
+         <label for="incomeRestriction">Income Restriction</label>
+         <input class="form-control" id="incomeRestriction-input" placeholder="Enter Income Restriction">
+       </div>
+        <div class="form-group">
+         <label for="gender">Gender</label>
+         <input class="form-control" id="gender-input" placeholder="Enter Gender">
+       </div>
+        <div class="form-group">
+         <label for="dependents">Dependents</label>
+         <input class="form-control" id="dependents-input" placeholder="Enter Dependents">
+       </div>
+        <div class="form-group">
+         <label for="faith">Faith</label>
+         <input class="form-control" id="faith-input" placeholder="Enter Faith">
+       </div>
+        <div class="form-group">
+         <label for="reqDocuments">Req Documents</label>
+         <input class="form-control" id="reqDocuments-input" placeholder="Enter Req Documents">
+       </div>
+        <div class="form-group">
+         <label for="description">Description</label>
+         <input class="form-control" id="description-input" placeholder="Enter Description">
+       </div>
+        <div class="form-group">
+         <label for="location">Location</label>
+         <input class="form-control" id="location-input" placeholder="Enter Location">
+       </div>
+        <div class="form-group">
+         <label for="contact">Contact</label>
+         <input class="form-control" id="contact-input" placeholder="Enter Contact">
+       </div>
+        <div class="form-group">
+         <label for="hours">Hours</label>
+         <input class="form-control" id="hours-input" placeholder="Enter Hours">
+       </div>
+        <div class="form-group">
+         <label for="weblink">Weblink</label>
+         <input class="form-control" id="weblink-input" placeholder="Enter Weblink">
+       </div>
+        <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+     </div>
+
+    </div> <!-- /container -->
+
+      <!-- Load js after page is done -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/admin.js"></script> 
+  </body>
+</html>

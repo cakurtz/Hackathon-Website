@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- AngularJS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+
+		<!-- Firebase -->	
+		<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+
+		<!-- AngularFire -->
+		<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+
+		<!-- CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+
+    	<title>Sign Up</title>
+  </head>
+
+  <body>
+
+    <div class="container">
+      <div class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills pull-right">
+            <li role="presentation" class="active"><a href="../index.html">Back</a></li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Sign Up</h3>
+      </div>
+     <div class="container">
+      <form>
+        <div class="form-group">
+          <label for="email">Email address</label>
+          <input type="email" class="form-control" id="email-input" aria-describedby="emailHelp" placeholder="Enter email">
+          <small id="emailHelp" class="form-text text-muted">This will not be spammed.</small>
+        </div>
+        <div class="form-group">
+          <label for="zipcode">Zip Code</label>
+          <input type="zipcode" class="form-control" id="zipcode-input" placeholder="Zipcode">
+        </div>
+        <div class="form-group">
+          <label for="sex">Sex</label>
+          <select class="form-control" id="sex-select">
+            <option>Male</option>
+            <option>Female</option>
+            <option>Other</option>
+          </select>
+          <br>
+          <input id="specify-sex-input" class="form-control" style="display: none" placeholder="Specify Other"></input>
+        </div>
+        <div class="form-group">
+          <label for="infoInterest">Main Interest</label>
+          <select class="form-control" id="infoInterest-select">
+            <option>Prevention Information</option>
+            <option>Available Services</option>
+            <option>General Information</option>
+            <option>Other</option>
+          </select>
+          <br>
+          <input id="specify-interest-input" class="form-control" placeholder="Interest" style="display: none"></input>
+        </div>
+
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" class="form-control" id="password-input" placeholder="Password">
+        </div>
+        <button id="submit-button" type="submit" class="btn btn-primary">Submit</button>
+      </form>
+
+     </div>
+
+    </div> <!-- /container -->
+
+      <!-- Load js after page is done -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../js/bootstrap.min.js"></script>
+      <script src="../js/signUp.js"></script> 
+  </body>
+</html>

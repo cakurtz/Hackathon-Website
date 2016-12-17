@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+       #map {
+        height: 400px;
+        width: 100%;
+       }
+    </style>
+
+		<!-- AngularJS -->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
+		<!-- Firebase -->	
+		<script src="https://www.gstatic.com/firebasejs/3.4.1/firebase.js"></script>
+		<!-- AngularFire -->
+		<script src="https://cdn.firebase.com/libs/angularfire/2.1.0/angularfire.min.js"></script>
+		<!-- CSS -->
+		<link href="../css/bootstrap.min.css" rel="stylesheet">
+    <link href="../css/jumbotron-narrow.css" rel="stylesheet">
+    	<title>Red Ribbon</title>
+
+  </head>
+
+  <body>
+    <div class="container">
+      <div class="header clearfix">
+        <h3 class="text-muted">Red Ribbon</h3>
+      </div>
+    <div/>
+
+    <div class="jumbotron">
+      <h3>Treatment Clinics in DFW Area</h3>
+      <div id="map"></div>
+    </div>
+ 
+
+    <script src="../js/locations.js"></script>
+    <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCPRMJXsSH9Yn9SECpHRdB3TzPyGOUMZgk&callback=initMap">
+    </script>
+
+      <!-- Load js after page is done -->
+      <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+      <!-- Include all compiled plugins (below), or include individual files as needed -->
+      <script src="../js/bootstrap.min.js"></script>
+  </body>
+
+</html>
